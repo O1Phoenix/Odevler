@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#214;rnek2"/>
+        <attribute name="authors" value="byoni"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-21 01:37:59 &#214;S"/>
+        <attribute name="created" value="Ynlvbmk7TkFJTTsyMDI0LTEwLTIxOzAxOjA3OjQzIMOWUzsyMjQ5"/>
+        <attribute name="edited" value="Ynlvbmk7TkFJTTsyMDI0LTEwLTIxOzAxOjM3OjU5IMOWUzsyOzIzNjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="saya&#231;" type="Integer" array="False" size=""/>
+            <assign variable="saya&#231;" expression="0"/>
+            <declare name="giri&#351;0" type="Boolean" array="False" size=""/>
+            <declare name="giri&#351;" type="Integer" array="False" size=""/>
+            <output expression="&quot;Say&#305; girmeye ba&#351;layabilirsiniz: &quot;" newline="True"/>
+            <input variable="giri&#351;"/>
+            <if expression="giri&#351;=0">
+                <then>
+                    <assign variable="giri&#351;0" expression="True"/>
+                </then>
+                <else>
+                    <assign variable="giri&#351;0" expression="False"/>
+                </else>
+            </if>
+            <declare name="liste" type="Integer" array="False" size=""/>
+            <assign variable="liste" expression="0"/>
+            <while expression="not giri&#351;0">
+                <assign variable="liste" expression="liste+giri&#351;"/>
+                <assign variable="saya&#231;" expression="saya&#231;+1"/>
+                <input variable="giri&#351;"/>
+                <if expression="giri&#351;=0">
+                    <then>
+                        <assign variable="giri&#351;0" expression="True"/>
+                    </then>
+                    <else>
+                        <assign variable="giri&#351;0" expression="False"/>
+                    </else>
+                </if>
+            </while>
+            <if expression="saya&#231;=0">
+                <then>
+                    <output expression="&quot;Say&#305; girmeden 0 giremezsiniz.&quot;" newline="True"/>
+                    <breakpoint expression="" always="True"/>
+                </then>
+                <else/>
+            </if>
+            <declare name="ortalama" type="Real" array="False" size=""/>
+            <assign variable="ortalama" expression="liste/saya&#231;"/>
+            <output expression="&quot;Girilen say&#305;lar&#305;n ortalamas&#305;: &quot;" newline="True"/>
+            <output expression="ortalama" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

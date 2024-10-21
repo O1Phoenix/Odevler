@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#214;rnek5"/>
+        <attribute name="authors" value="byoni"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-21 11:41:26 &#214;&#214;"/>
+        <attribute name="created" value="Ynlvbmk7TkFJTTsyMDI0LTEwLTIxOzExOjA2OjA5IMOWw5Y7MjM4Mg=="/>
+        <attribute name="edited" value="Ynlvbmk7TkFJTTsyMDI0LTEwLTIxOzExOjQxOjI2IMOWw5Y7MjsyNDg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s&#305;cakl&#305;k" type="Real" array="False" size=""/>
+            <output expression="&quot;S&#305;cakl&#305;k de&#287;erini giriniz:&quot;" newline="True"/>
+            <input variable="s&#305;cakl&#305;k"/>
+            <if expression="s&#305;cakl&#305;k&lt;=0">
+                <then>
+                    <output expression="&quot;Su kat&#305; formda.&quot;" newline="True"/>
+                    <breakpoint expression="" always="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="s&#305;cakl&#305;k&lt;100">
+                <then>
+                    <output expression="&quot;Su s&#305;v&#305; formda.&quot;" newline="True"/>
+                    <breakpoint expression="" always="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="s&#305;cakl&#305;k&gt;=100">
+                <then>
+                    <output expression="&quot;Su gaz formda.&quot;" newline="True"/>
+                    <breakpoint expression="" always="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

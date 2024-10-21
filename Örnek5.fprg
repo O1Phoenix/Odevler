@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#214;rnek4"/>
+        <attribute name="authors" value="byoni"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-21 11:40:05 &#214;&#214;"/>
+        <attribute name="created" value="Ynlvbmk7TkFJTTsyMDI0LTEwLTIxOzExOjIyOjQzIMOWw5Y7MjM3OA=="/>
+        <attribute name="edited" value="Ynlvbmk7TkFJTTsyMDI0LTEwLTIxOzExOjQwOjA1IMOWw5Y7MTsyNDg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ToplamHesap" type="Real" array="False" size=""/>
+            <declare name="kalemsay&#305;" type="Integer" array="False" size=""/>
+            <output expression="&quot;Almak istedi&#287;iniz kalem mikatr&#305;n&#305; giriniz:&quot;" newline="True"/>
+            <input variable="kalemsay&#305;"/>
+            <declare name="kalemfiyat" type="Real" array="False" size=""/>
+            <output expression="&quot;Kalem fiyat&#305;n&#305; giriniz:&quot;" newline="True"/>
+            <input variable="kalemfiyat"/>
+            <declare name="deftersay&#305;" type="Integer" array="False" size=""/>
+            <output expression="&quot;Almak istedi&#287;iniz defter mikatr&#305;n&#305; giriniz:&quot;" newline="True"/>
+            <input variable="deftersay&#305;"/>
+            <declare name="defterfiyat" type="Real" array="False" size=""/>
+            <output expression="&quot;Defter fiyat&#305;n&#305; giriniz:&quot;" newline="True"/>
+            <input variable="defterfiyat"/>
+            <declare name="silgisay&#305;" type="Integer" array="False" size=""/>
+            <output expression="&quot;Almak istedi&#287;iniz silgi mikatr&#305;n&#305; giriniz:&quot;" newline="True"/>
+            <input variable="silgisay&#305;"/>
+            <declare name="silgifiyat" type="Real" array="False" size=""/>
+            <output expression="&quot;Silgi fiyat&#305;n&#305; giriniz:&quot;" newline="True"/>
+            <input variable="silgifiyat"/>
+            <assign variable="ToplamHesap" expression="(kalemsay&#305;*kalemfiyat)+(deftersay&#305;*defterfiyat)+(silgisay&#305;*silgifiyat)"/>
+            <output expression="&quot;Toplam tutar&#305;n&#305;z: &quot;" newline="True"/>
+            <output expression="ToplamHesap" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

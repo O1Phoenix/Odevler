@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#214;rnek4"/>
+        <attribute name="authors" value="byoni"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-21 11:52:53 &#214;&#214;"/>
+        <attribute name="created" value="Ynlvbmk7TkFJTTsyMDI0LTEwLTIxOzExOjQ0OjQ2IMOWw5Y7MjM4NQ=="/>
+        <attribute name="edited" value="Ynlvbmk7TkFJTTsyMDI0LTEwLTIxOzExOjUyOjUzIMOWw5Y7MTsyNDkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ortalama" type="Real" array="False" size=""/>
+            <declare name="vize" type="Real" array="False" size=""/>
+            <output expression="&quot;Vize notunu giriniz:&quot;" newline="True"/>
+            <input variable="vize"/>
+            <declare name="final" type="Real" array="False" size=""/>
+            <output expression="&quot;Final notunu giriniz:&quot;" newline="True"/>
+            <input variable="final"/>
+            <assign variable="ortalama" expression="((vize*40)/100)+((final*60)/100)"/>
+            <if expression="ortalama&gt;=60">
+                <then>
+                    <output expression="&quot;Ge&#231;ti&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Kald&#305;&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

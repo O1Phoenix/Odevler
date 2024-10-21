@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#214;rnek6"/>
+        <attribute name="authors" value="byoni"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-21 11:42:15 &#214;&#214;"/>
+        <attribute name="created" value="Ynlvbmk7TkFJTTsyMDI0LTEwLTIxOzEwOjU4OjExIMOWw5Y7MjM4MQ=="/>
+        <attribute name="edited" value="Ynlvbmk7TkFJTTsyMDI0LTEwLTIxOzExOjQyOjE1IMOWw5Y7MjsyNDg4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="metin" type="String" array="False" size=""/>
+            <output expression="&quot;Yazd&#305;rmak istedi&#287;iniz metni girin:&quot;" newline="True"/>
+            <input variable="metin"/>
+            <declare name="tekrar" type="Integer" array="False" size=""/>
+            <output expression="&quot;Tekrarlatmak istedi&#287;iniz miktar&#305; girin:&quot;" newline="True"/>
+            <input variable="tekrar"/>
+            <declare name="saya&#231;" type="Integer" array="False" size=""/>
+            <assign variable="saya&#231;" expression="0"/>
+            <while expression="saya&#231;&lt;tekrar">
+                <assign variable="saya&#231;" expression="saya&#231;+1"/>
+                <output expression="metin" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
